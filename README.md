@@ -25,8 +25,12 @@ Two meta skills. Each interviews you about how *your* team wants to run that loo
 
 | Meta skill | Forges | Produces |
 |---|---|---|
-| `/sddsmith:forge-spec-loop` | Your specify loop — where specs live, what shape they take | A `/spec` skill that interrogates you and writes a behavior-focused spec (Overview, Requirements with RFC 2119, Given-When-Then scenarios, Constraints) |
+| `/sddsmith:forge-spec-loop` | Your specify loop — where specs live, what shape they take | A `/spec-feature` *or* `/spec-epic` skill (you pick one per run). Both run the same loop; they differ in template — feature is behavior-focused (Overview, Requirements, Scenarios, Constraints), epic is intent-focused (Problem, Outcomes, High-level requirements, Out of scope). |
 | `/sddsmith:forge-implement-loop` | Your implement loop — spec source, validators, report format | An `/implement` skill wired to the validators and report shape you chose |
+
+**Two levels, one per run:**
+- `/spec-feature` — behavior. Use for a single feature.
+- `/spec-epic` — intent. Use for a multi-feature initiative where outcomes and boundaries matter more than concrete scenarios.
 
 The output is a skill file in `skills/`. You own it, you edit it, you check it into your repo.
 
