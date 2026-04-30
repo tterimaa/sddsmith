@@ -80,15 +80,15 @@ Why not `AskUserQuestion`: its schema requires `options` to have ≥2 labeled it
 
 Print this verbatim (or very close to it) — the bullets are the two options, and the user's next message is their answer:
 
-> **Should the forged skill(s) integrate with anything? By default they read `$ARGUMENTS` and write to chat + clipboard.**
+> **Should the forged skill integrate with anything? By default it reads `\$ARGUMENTS` and writes to chat + clipboard.**
 >
 > *(Substitute `/spec-{{LEVEL}}` — e.g. "/spec-feature" or "/spec-epic".)*
 >
-> 1. **None** — keep defaults: input from `$ARGUMENTS`, output to chat + clipboard.
+> 1. **None** — keep defaults: input from `\$ARGUMENTS`, output to chat + clipboard.
 > 2. **Open answer** — describe input and/or output wiring in your reply.
 >
-> _Input examples_ — read an ADO/Jira epic as input for drafting features; load a Confluence page as the brief; read a markdown file from disk.
-> _Output examples_ — create a Linear issue via MCP; post the spec as a PR comment via `gh`; append to `docs/specs/`.
+> _Input examples_ — read an ADO epic as input for drafting features; read a Linear issue draft to refine the feature; read a markdown file from disk.
+> _Output examples_ — create new features under an ADO epic; update the same Linear issue in place; create new files on disk.
 
 After printing, stop. Do not call any further tools. Wait for the user's reply.
 
